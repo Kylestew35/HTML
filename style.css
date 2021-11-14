@@ -1,9 +1,9 @@
 body {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 h1 {
-    text-align: center;
-    font-size: 70px;
+  text-align: center;
+  font-size: 70px;
 }
 h1 p {
   text-align: center;
@@ -13,35 +13,43 @@ h2 p {
   text-align: center;
   font-size: 20px;
 }
+h1 a {
+  color: deepskyblue;
+}
 h2 img {
   text-align: center;
 }
 h2 .navigation {
-    font-size: 50px;
-    text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 img {
-    max-width: 100%
-  }
+  max-width: 100%;
+}
 .image {
-    flex-basis: 40%
-  }
+  flex-basis: 40%;
+}
 .navigation {
-    font-size: 20px;
-    padding-left: 40px;
-  }
+  font-size: 20px;
+  padding-left: 40px;
+}
 .right {
-    font-size: 31px;
-    padding-right: 40px;
-  }
+  font-size: 31px;
+  padding-right: 40px;
+}
 h3 {
-      text-align: center;
-  }
+  text-align: center;
+}
 .links {
   font-size: 33px;
+}
+.table {
+  text-align: center;
+  font-size: large;
+  width: 100%;
 }

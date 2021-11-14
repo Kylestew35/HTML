@@ -1,0 +1,147 @@
+ <div class="container">
+      <div class="image">
+        <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg">
+      </div>
+      <div class="text">
+        <h1>Paris is one of the most beautiful cities in France.</h1>
+      </div>
+    </div>
+text next to img
+css...
+ <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      img {
+        max-width: 100%
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+    </style>
+tables...
+<table>
+  <thead>
+  <tr>
+    <th scope="col">Company Name</th>
+    <th scope="col">Number of Items to Ship</th>
+    <th scope="col">Next Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row">Adam's Greenworks</td>
+    <td scope="row">14</td>
+    <td scope="row">Package Items</td>
+  </tr>
+  <tr>
+   <td>Davie's Burgers</td>
+   <td rowspan="2">2</td>
+   <td>Send Invoice</td>
+</tr>
+<tr>
+  <td colspan="2">Baker's Bike Shop</td>
+  <td>3</td>
+  <td>Send Invoice</td>
+</tr>
+<tr>
+  <td>Miss Sally's Southern</td>
+  <td>4</td>
+  <td>Ship</td>
+</tr>
+<tr>
+  <td>Summit Resort Rentals</td>
+  <td>4</td>
+  <td>Ship</td>
+</tr>
+<tr>
+  <td>Strike Fitness</td>
+  <td>1</td>
+  <td>Enter Order</td>
+</tr>
+</tbody>
+<tfoot>
+<td>Total</td>
+<td>28</td>
+</tfoot>
+</table>
+
+Rows...
+<form action="submission.html" method="POST">
+        <h1>Create a burger!</h1>
+					<section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <hr>
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <hr>
+        <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+            <option value="pretzel">Pretzel</option>
+          </select>
+        </section>
+        <hr>
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <!--Add your code below-->
+          <input type="submit" value="submit">
+        </section>
+        
+      </form>
